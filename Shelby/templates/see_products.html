@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Productos
+{% endblock %}
+
+{% block contenido %}
+<h1></h1>
+<div >
+    
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Stock</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">categoria</th>
+            <th scope="col">SKU</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+    {% for product  in  products %}
+        <tbody>
+          <tr>
+            <th scope="row">*</th>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.SKU}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </tbody>
+    {% endfor %}
+      </table>
+</div>
+<br>
+<br>
+
+{% endblock %}

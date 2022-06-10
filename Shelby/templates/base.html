@@ -9,20 +9,31 @@
         {% block titulo %}
         {% endblock %}
     </title>
-    <link rel="stylesheet"  href="{% static 'css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
+    
+
     <header>
-
-    </header>
-
-    <body>
+      
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="/">Inicio</a>
+            </nav>
+            
         
-    </body>
-
-    <footer>
-
-    </footer>
+    
+        
+        
+        
+        {% block contenido %}
+        {% endblock %}
+    </header>
+<body>
     
 </body>
+    
+</body>
+
+
 </html>
