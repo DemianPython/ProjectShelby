@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Iniciar sesión
+{% endblock %}
+
+{% block contenido %}
+<form action="" method="POST" class="FormularioLogin" >
+    <br/>
+    <h4 >Complete los campos para iniciar sesion</h4>
+    <br/>
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <p >{{errors}}<p></p>
+    <br/>
+    <input type="submit", value="Ingresar" >
+</form>
+{% endblock %}

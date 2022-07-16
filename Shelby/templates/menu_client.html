@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Inicio
+{% endblock %}
+
+{% block contenido %}
+<a href="{% url 'create-client' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="margin-top: 5rem;margin-left: 5rem; width:15rem; height: 10rem; position: fixed; padding-top: 4rem; text-align: center;">Cargar cliente</a>
+<a href="{% url 'see-client' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="margin-top: 5rem;margin-left: 25rem; width:15rem; height: 10rem; position: fixed; padding-top: 4rem; text-align: center;">Ver clientes</a>
+
+{% endblock %}

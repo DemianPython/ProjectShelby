@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Productos
+{% endblock %}
+
+{% block contenido %}
+{% if form_client %}
+
+    <form class="FormularioCargarEmpleado" action="" method="POST" >
+        {% csrf_token %}
+        <table>
+            {{form_client.as_table}}
+        </table>
+        <input type="submit", value="Cargar cliente">
+    </form>
+    
+
+{% endif %}
+{% endblock %}

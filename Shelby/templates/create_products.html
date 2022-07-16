@@ -7,7 +7,7 @@ Productos
 {% block contenido %}
 {% if form %}
 
-    <form action="" method="POST" >
+    <form class="FormularioCargarProducto " action="" method="POST" >
         {% csrf_token %}
         <table>
             {{form.as_table}}

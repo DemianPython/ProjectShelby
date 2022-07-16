@@ -22,11 +22,11 @@ def create_products(request):
         form = Products_form(request.POST)
         if form.is_valid():
             new_product = Products.objects.create(
-                name = form.cleaned_data['name'],
-                price = form.cleaned_data['price'],
-                category = form.cleaned_data['category'],
+                Nombre = form.cleaned_data['Nombre'],
+                Precio = form.cleaned_data['Precio'],
+                Categoria = form.cleaned_data['Categoria'],
                 SKU = form.cleaned_data['SKU'],
-                quantity = form.cleaned_data['quantity'],
+                Cantidad = form.cleaned_data['Cantidad'],
             )
             context ={'new_product':new_product}
         return redirect('/see-products')

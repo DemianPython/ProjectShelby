@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Productos
+{% endblock %}
+
+{% block contenido %}
+{% if form_OrderProducts %}
+<div class="FormularioOrdenProductos">
+    <form  action="" method="POST" >
+        {% csrf_token %}
+        <table  >
+            {{form_OrderProducts.as_table}}
+        </table>
+        <input type="submit", value="Cargar Producto">
+    </form>
+
+</div>
+    
+    
+
+{% endif %}
+{% endblock %}

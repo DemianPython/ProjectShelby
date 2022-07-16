@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Productos
+{% endblock %}
+
+{% block contenido %}
+<h1></h1>
+<div >
+    
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Pedidos</th>
+            <th scope="col">Empresa</th>
+            <th scope="col">Lista de productos</th>
+            <th scope="col">Fecha de pedido</th>
+            <th scope="col">Fecha de entrega</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+    {% for Orderproduct  in  Orderproducts %}
+        <tbody>
+          <tr>
+            <th scope="row">*</th>
+            <td>{{Orderproduct.Empresa}}</td>
+            <td>{{Orderproduct.Lista_de_productos}}</td>
+            <td>{{Orderproduct.Fecha_de_pedido}}</td>
+            <td>{{Orderproduct.Fecha_de_entrega}}</td>
+            <td>{{Orderproduct.Total}}</td>
+          </tr>
+        </tbody>
+    {% endfor %}
+      </table>
+</div>
+<br>
+<br>
+
+{% endblock %}

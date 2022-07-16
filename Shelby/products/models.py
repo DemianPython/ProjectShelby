@@ -11,9 +11,9 @@ from django.forms import CharField
 # Create your models here.
 
 class Products(models.Model):
-    name = models.CharField(max_length=50)
-    price = models.FloatField()
-    category = models.CharField(max_length=100, default= NULL)
+    Nombre = models.CharField(max_length=50)
+    Precio = models.FloatField()
+    Categoria = models.CharField(max_length=100, default= NULL)
     SKU = models.IntegerField()
-    quantity = models.IntegerField(default=0)
+    Cantidad = models.IntegerField(default=0)
 

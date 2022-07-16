@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Registrate
+{% endblock %}
+
+{% block contenido %}
+    <form class="FormularioRegistro" action="" method="POST" >
+        <h5 >Complete los campos para registrarse</h5>
+        {% csrf_token %}
+          <table>
+              {{form.as_table}}
+          </table>
+          <input type="submit", value="Ingresar">
+    </form>
+{% endblock %}

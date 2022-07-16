@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Productos
+{% endblock %}
+
+{% block contenido %}
+<h1></h1>
+<div >
+    
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Pagos</th>
+            <th scope="col">Empleado</th>
+            <th scope="col">Sueldo</th>
+            <th scope="col">Comisiones</th>
+            <th scope="col">Mes</th>
+            <th scope="col">Año</th>
+            <th scope="col">Sueldo Total</th>
+
+          </tr>
+        </thead>
+    {% for salary  in  salary %}
+        <tbody>
+          <tr>
+            <th scope="row">*</th>
+            <td>{{salary.Empleado}}</td>
+            <td>{{salary.Sueldo}}</td>
+            <td>{{salary.Comisiones}}</td>
+            <td>{{salary.Mes}}</td>
+            <td>{{salary.Año}}</td>
+            <td>{{salary.Total}}</td>
+          </tr>
+        </tbody>
+    {% endfor %}
+      </table>
+</div>
+<br>
+<br>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Clientes
+{% endblock %}
+
+{% block contenido %}
+<h1></h1>
+<div >
+    
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Clientes</th>
+            <th scope="col">Nombre del cliente</th>
+            <th scope="col">Nombre del local</th>
+            <th scope="col">Localidad</th>
+            <th scope="col">Direccion del local</th>
+            <th scope="col">Cuenta corriente</th>
+          </tr>
+        </thead>
+    {% for client  in  client %}
+        <tbody>
+          <tr>
+            <th scope="row">*</th>
+            <td>{{client.Nombre_del_cliente}}</td>
+            <td>{{client.Nombre_del_local}}</td>
+            <td>{{client.Localidad}}</td>
+            <td>{{client.Direccion_del_local}}</td>
+            <td>{{client.Cuenta_corriente}}</td>
+          </tr>
+        </tbody>
+    {% endfor %}
+      </table>
+</div>
+<br>
+<br>
+
+{% endblock %}

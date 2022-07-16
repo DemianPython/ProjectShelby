@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Productos
+{% endblock %}
+
+{% block contenido %}
+<h1></h1>
+<div >
+    
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Empleados</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cargo</th>
+            <th scope="col">Inicio laboral</th>
+            <th scope="col">Sueldo mensual</th>
+            <th scope="col">Cuenta corriente</th>
+          </tr>
+        </thead>
+    {% for employeer  in  employeer %}
+        <tbody>
+          <tr>
+            <th scope="row">*</th>
+            <td>{{employeer.Nombre}}</td>
+            <td>{{employeer.Cargo}}</td>
+            <td>{{employeer.Inicio_laboral}}</td>
+            <td>{{employeer.Sueldo_mensual}}</td>
+            <td>{{employeer.Cuenta_corriente}}</td>
+          </tr>
+        </tbody>
+    {% endfor %}
+      </table>
+</div>
+<br>
+<br>
+
+{% endblock %}

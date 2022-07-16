@@ -1,0 +1,236 @@
+html{
+    max-height: 100%;
+    height: 1360px;
+}
+
+body{
+    background-color: rgb(239, 246, 253);
+    max-width: 100%;
+    min-width: 100%;
+    position: absolute;
+    align-content: center;
+
+}
+
+.botonn{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(50, 119, 215);
+    margin-left: 200px;
+    margin-top: 15px;
+    padding: 0%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.NavBar{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(30, 33, 37);
+    text-decoration: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Inicio{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(30, 33, 37);
+    color: rgb(250, 253, 255);
+    text-decoration: none;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.Inicio:hover{
+    background-color: rgb(30, 33, 37);
+    text-align: center;
+    color: rgb(249, 249, 249); 
+    text-decoration: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.FormularioCargarProducto {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(50, 119, 215);
+    color: aliceblue;
+    margin-left: 40%;
+    margin-top: 10%;
+    text-align: center;
+    padding-top: 1%;
+    padding-right: 1%;
+    border-style: solid;
+    border-color: rgb(50, 119, 215);
+    box-shadow: 2px 2px 2px 3px rgb(0, 0, 0, 0.2) ;
+}
+
+.FormularioCargarProveedores {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(50, 119, 215);
+    color: aliceblue;
+    margin-left: 40%;
+    margin-top: 10%;
+    text-align: center;
+    padding-top: 1%;
+    padding-right: 1%;
+    border-style: solid;
+    border-color: rgb(50, 119, 215);
+    box-shadow: 2px 2px 2px 3px rgb(0, 0, 0, 0.2) ;
+
+}
+
+.FormularioOrdenProductos {
+    width: 600px;
+    height: 450px;
+    background-color: rgb(50, 119, 215);
+    color: aliceblue;
+    margin-left: 28%;
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 1%;
+    padding-right: 1%;
+    border-style: solid;
+    border-color: rgb(50, 119, 215);
+    box-shadow: 2px 2px 2px 3px rgb(0, 0, 0, 0.2) ;
+
+}
+
+.FormularioGuardarPago{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(50, 119, 215);
+    color: aliceblue;
+    margin-left: 40%;
+    margin-top: 7%;
+    text-align: center;
+    padding-top: 1%;
+    padding-right: 1%;
+    border-style: solid;
+    border-color: rgb(50, 119, 215);
+    box-shadow: 2px 2px 2px 3px rgb(0, 0, 0, 0.2) ;
+}
+
+.FormularioCargarEmpleado{
+    width: 300px;
+    height: 320px;
+    background-color: rgb(50, 119, 215);
+    color: aliceblue;
+    margin-left: 40%;
+    margin-top: 7%;
+    text-align: center;
+    padding-top: 1%;
+    padding-right: 1%;
+    border-style: solid;
+    border-color: rgb(50, 119, 215);
+    box-shadow: 2px 2px 2px 3px rgb(0, 0, 0, 0.2) ;
+
+}
+
+.FormularioCargarEmpleado { 
+    width: 300px;
+    height: 350px;
+    background-color: rgb(50, 119, 215);
+    color: aliceblue;
+    margin-left: 40%;
+    margin-top: 7%;
+    text-align: center;
+    padding-top: 1%;
+    padding-right: 1%;
+    border-style: solid;
+    border-color: rgb(50, 119, 215);
+    box-shadow: 2px 2px 2px 3px rgb(0, 0, 0, 0.2) ;
+
+} 
+
+.FormularioRegistro { 
+    width: 700px;
+    height: 350px;
+    background-color: rgb(50, 119, 215);
+    color: aliceblue;
+    margin-left: 25%;
+    margin-top: 7%;
+    text-align: center;
+    padding-top: 1%;
+    padding-right: 1%;
+    border-style: solid;
+    border-color: rgb(50, 119, 215);
+    box-shadow: 2px 2px 2px 3px rgb(0, 0, 0, 0.2) ;
+}
+
+.FormularioRegistroOInicioSesion { 
+    display: inline-block;
+    box-shadow: 1px 1px 1px 2px rgb(0, 0, 0, 0.1) ;
+    padding: 2%;
+    width: 420px;
+    height: 400px;
+    margin-left: 35%;
+    margin-top: 5%;
+    background-color:  rgb(114, 173, 255);
+    color: rgb(29, 106, 182); 
+    text-decoration: solid;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Boton{
+    padding: 0% ;
+    background-color: rgba(252, 244, 241, 0.949);
+    box-shadow: 1px 1px 1px 2px rgba(6, 22, 33, 0.1);
+    color: rgb(24, 97, 180);
+    border-style: initial;
+    margin-top: 20%;
+    border-color: rgba(104, 104, 104, 0.949);
+    text-decoration: solid;
+    max-width: 100%;
+    max-height: 100%;
+    border: 30px;
+    border-color: rgba(252, 244, 241, 0.949) ;
+    border-style: solid;
+}
+.Boton:hover{
+    padding: 1%;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1) ;
+    cursor: pointer;
+    color: rgb(3, 58, 136) ;
+    text-decoration: solid;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Cerrarsesion{
+    width: 50px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    text-decoration: solid;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Cerrarsesion:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(30, 88, 213); 
+    text-decoration: none;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.FormularioLogin{
+    width: 300px;
+    height: 350px;
+    background-color: rgb(50, 119, 215);
+    color: aliceblue;
+    margin-left: 40%;
+    margin-top: 6%;
+    text-align: center;
+    padding-top: 1%;
+    padding-right: 1%;
+    border-style: solid;
+    border-color: rgb(50, 119, 215);
+    box-shadow: 2px 2px 2px 3px rgb(0, 0, 0, 0.2) ;
+}
