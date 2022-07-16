@@ -1,8 +1,6 @@
 from multiprocessing.sharedctypes import Value
 from django.db import models
 
-
-
 class Employeer(models.Model):
     Nombre = models.CharField(max_length=50)
     Cargo =  models.CharField(max_length=100)

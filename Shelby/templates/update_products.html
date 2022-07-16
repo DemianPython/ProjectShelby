@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Actualizar productos
+{% endblock %}
+
+{% block contenido %}
+
+    {% if form %}
+        <form enctype="multipart/form-data" action="" method="POST" class="FormularioActualizar">
+            <h2 style="text-align: center ;" >Complete los campos a actualizar</h2>
+            {% csrf_token %}
+            <br/>
+            <table>
+                <b>{{form.as_table}}</b>
+            </table>
+            <input type="submit" , value="Enviar">
+        </form>
+    {% endif %}
+
+{% endblock %}

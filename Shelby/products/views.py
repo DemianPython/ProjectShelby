@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect
 from products.models import Products
 from products.forms import Products_form
+from django.views.generic import  DetailView,  DeleteView, UpdateView, CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse
 # Create your views here.
 
 
@@ -13,20 +16,34 @@ def see_products(request):
     context = {'products':products}
     return render(request, 'see_products.html', context = context)
 
-def create_products(request):
-    if request.method == 'GET':
-        form = Products_form()
-        context = {'form':form}
-        return render(request, 'create_products.html', context=context)
-    else:
-        form = Products_form(request.POST)
-        if form.is_valid():
-            new_product = Products.objects.create(
-                Nombre = form.cleaned_data['Nombre'],
-                Precio = form.cleaned_data['Precio'],
-                Categoria = form.cleaned_data['Categoria'],
-                SKU = form.cleaned_data['SKU'],
-                Cantidad = form.cleaned_data['Cantidad'],
-            )
-            context ={'new_product':new_product}
-        return redirect('/see-products')
+   
+class Create_products(CreateView, LoginRequiredMixin):
+    model = Products
+    template_name = 'create_products.html'
+    fields = '__all__'
+
+    def get_success_url(self):
+        return reverse('detail-products', kwargs={'pk':self.object.pk})
+
+        
+
+class Delete_products(DeleteView, LoginRequiredMixin):
+    model = Products
+    template_name = "delete_products.html"
+    def get_success_url(self):
+        return reverse('see-products')
+
+    
+class Detail_products(DetailView):
+    model = Products
+    template_name= 'detail_products.html'
+    
+
+class Update_products(UpdateView):
+    model = Products
+    template_name = 'update_products.html'
+    fields = 'Nombre', 'Precio', 'Categoria', 'Marca','SKU','Cantidad'
+
+
+    def get_success_url(self):
+        return reverse('detail-products', kwargs = {'pk':self.object.pk})

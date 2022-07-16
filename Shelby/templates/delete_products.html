@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Borrar products
+{% endblock %}
+
+{% block contenido %}
+    <h3 class="Eliminar" style="color: red">
+        Estas por eliminar la experiencia {{object.Nombre}}, estas seguro?
+        <br/>
+        <form method = "POST">
+            {% csrf_token %}
+            <button class="btn btn-danger" type="submit">Eliminar</button>
+        </form>
+    </h3>
+{% endblock %}

@@ -14,23 +14,28 @@ Productos
             <th scope="col">Stock</th>
             <th scope="col">Nombre</th>
             <th scope="col">Precio</th>
-            <th scope="col">categoria</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Marca</th>
             <th scope="col">SKU</th>
             <th scope="col">Cantidad</th>
+            <th scope="col">Detalle de producto</th>
+
           </tr>
         </thead>
-    {% for product  in  products %}
+     {% for product  in  products %}
         <tbody>
           <tr>
             <th scope="row">*</th>
             <td>{{product.Nombre}}</td>
             <td>{{product.Precio}}</td>
             <td>{{product.Categoria}}</td>
+            <td>{{product.Marca}}</td>
             <td>{{product.SKU}}</td>
             <td>{{product.Cantidad}}</td>
+            <td><a href="/detail-products/{{product.id}}/" >Ver detalle</a></td>
           </tr>
         </tbody>
-    {% endfor %}
+     {% endfor %}
       </table>
 </div>
 <br>

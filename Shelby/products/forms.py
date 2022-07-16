@@ -7,7 +7,9 @@ class Products_form(forms.ModelForm):
         "Nombre",
         "Precio",
         "Categoria",
+        "Marca",
         "SKU",
         "Cantidad",
+        
         ]
    

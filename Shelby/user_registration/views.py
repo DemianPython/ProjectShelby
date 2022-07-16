@@ -13,7 +13,6 @@ def user_registration(request):
 def register_view(request):
     if request.method == 'POST':
         form = User_registration_form(request.POST)
-
         if form.is_valid():
             form.save()
             username = form.cleaned_data['username']

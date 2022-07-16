@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Detalle de experiencia
+{% endblock %}
+
+{% block contenido %}
+<div enctype="multipart/form-data" class="d-flex" style="margin-top:1rem; margin-left:15rem">
+    <div class="card mb-3" style="width: 800px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            {% if object.image %}
+            <img class="card-img-top" src="{{object.image.url}}" alt="Card image cap" style="height: 200px;width: 100%;">
+            {% endif %}
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{object.Nombre}}</h5>
+              <p class="card-text">{{object.Precio}}</p>
+              <p class="card-text">{{object.Categoria}}</p>
+              <p class="card-text">{{object.Marca}}</p>
+              <p class="card-text">{{object.SKU}}</p>
+              <p class="card-text">{{object.Cantidad}}</p>
+              <p class="card-text"><small class="text-muted">{{object.cuerpo}}</small></p>
+              <br>
+              <br>
+              <br>
+              <a href="/see-products/" >ver lista de productos</a>
+              <a href="/update-products/{{object.id}}/" >Editar </a>
+              <a href="/delete-products/{{object.id}}/">Eliminar</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+{% endblock %}
